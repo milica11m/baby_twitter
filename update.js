@@ -10,7 +10,9 @@ var dugme = document.getElementById("tvit_dugme");
 dugme.onclick = function(e) {
 	var tvit = document.getElementById("novi_tvit").value;
 	var div = document.createElement("div");
-	div.innerHTML = tvit;  // zasto mi ovde ne radi appendChild?!
+	div.innerHTML = tvit;  
+	// var tvit = document.createTextNode(document.getElementById("novi_tvit").value);
+	// div.appendChild(tvit);
 	div.classList.add("tvit");
 	var tvitovi = document.getElementById("svi_tvitovi");
 	tvitovi.insertBefore(div, tvitovi.firstChild);

@@ -1,15 +1,3 @@
-var profile = {
-	name: "Nemanja",
-	lastName: "Jovanović",
-	coverPhoto: "http://i.imgur.com/5S5Nyhm.jpg",
-	profilePhoto: "https://pbs.twimg.com/profile_images/938561913641775105/ZZmnxU-T_400x400.jpg",
-	username: "NemanjaJ91",
-	tvitovi: [
-		"Kako to da on nije na listi 'Politiko-a' 28 najuticajnihih Evropljana, koji će oblikovati kontinent u 2018. godini? Pa, Evropa će oblikovati njega..",
-		"Sloboda je najuzvišeniji ideal. Ko to ne razume, u gadnom je problemu..",
-		"'Ne postoji veća žalost od prisećanja na sreću u doba bede.' Dante Aligijeri"
-	]
-}
 var profil = {
 	name: "Milica",
 	lastName: "Milosavljevic",
@@ -21,12 +9,9 @@ var profil = {
 
 var coverImg = document.getElementById("cover_photo");
 coverImg.style.backgroundImage = "url('" + profil.coverPhoto + "')";
-// coverImg.style.backgroundPosition = "right bottom";
-// coverImg.style.backgroundSize = "cover";
 
 var profileImg = document.getElementById("profile_pic");
 profileImg.src = profil.profilePhoto;
-// profileImg.style.width = "100%";
 
 var fullName = document.getElementById("name");
 fullName.innerHTML = profil.name + " " + profil.lastName;
@@ -36,7 +21,6 @@ username.innerHTML = profil.username;
 
 var profileImgMini = document.getElementById("profile_pic_mini");
 profileImgMini.src = profil.profilePhoto;
-// profileImgMini.style.width = "100%";
 
 var tvitovi = document.getElementById("svi_tvitovi");
 for (var i = profil.tvitovi.length - 1; i >= 0; i--) {
