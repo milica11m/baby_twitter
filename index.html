@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Twitter</title>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div id="cover_photo"></div>
+<div class="header">
+	<div class="header-box">
+		<div class="profile-pic-bg">
+			<img id="profile_pic" src="" alt="">
+		</div>
+		<div class="profile-nav">
+			<ul>
+				<li><a href="#"><span>Твитова</span><span class="active" id="broj_tvitova">18</span></a></li>
+				<li><a href="#"><span>Праћења</span><span id="broj_pracenja"></span></a></li>
+				<li><a href="#"><span>Пратиоци</span><span id="broj_pratilaca"></span></a></li>
+				<li><a href="#"><span>Свиђања</span><span id="broj_svidjanja"></span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="wrapper">
+	<div class="info">
+		<p id="name"></p>
+		<p class="username">@<span id="username"></span></p>
+	</div>
+	<div class="tvitovi">
+		<div id="textarea">
+			<div class="tvit-box">
+				<div class="profile_pic_mini_bg">
+					<img id="profile_pic_mini" src="" alt="">
+				</div>
+				<textarea id="novi_tvit" maxlength="140" placeholder="Шта се дешава?"></textarea>
+			</div>
+			<button id="tvit_dugme" disabled>Твитуј</button>
+		</div>
+		<div id="svi_tvitovi">
+			<!-- <div class="tvit">Neki tvit</div> -->
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="profile.js"></script>
+<script type="text/javascript" src="update.js"></script>
+</body>
+</html>
