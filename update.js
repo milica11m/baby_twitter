@@ -4,8 +4,14 @@ document.getElementById("novi_tvit").onclick = function(e) {
 	document.getElementById("textarea").style.height = "154px";
 }
 document.getElementById("novi_tvit").oninput = function(e) {
-	document.getElementById("tvit_dugme").removeAttribute("disabled");
+	if (/\S/.test(document.getElementById("novi_tvit").value)) {
+    	// string is not empty and not just whitespace
+		document.getElementById("tvit_dugme").removeAttribute("disabled");
+	} else {
+		document.getElementById("tvit_dugme").disabled = true;
+	}
 };
+
 var dugme = document.getElementById("tvit_dugme");
 dugme.onclick = function(e) {
 	var tvit = document.getElementById("novi_tvit").value;
